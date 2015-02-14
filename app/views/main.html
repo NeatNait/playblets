@@ -1,0 +1,17 @@
+{{user.clientId}}
+<br>
+<qrcode data="http://172.20.10.2:9000/#/client" href="http://172.20.10.2:9000/#/client" size="200" ></qrcode>
+
+
+<ul>
+  <li ng-repeat="user in users">{{user.clientId}}</li>
+</ul>
+
+
+
+<div class="player" ng-repeat="user in users" 
+  style="background:#{{user.color}}; margin-left:{{user.x}}px">
+</div>
+
+
+
